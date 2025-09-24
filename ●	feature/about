@@ -1,1 +1,10 @@
+git checkout -b feature/about
+echo "Мен Рзабекпін." > about.txt
+echo "Java бағдарламалаумен айналысамын." >> about.txt
+echo "Git үйреніп жатырмын." >> about.txt
+git add about.txt
+git commit -m "Add about.txt with personal info"
+
+git checkout main
+git merge feature/about
 
